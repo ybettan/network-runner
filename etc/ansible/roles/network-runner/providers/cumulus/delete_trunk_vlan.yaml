@@ -1,3 +1,5 @@
 ---
-- fail:
-    msg: Delete Trunk VLAN is not implimented for cumulus
+- name: "cumulus: delete vlan from trunk port using nvue"
+  raw: |
+    nv unset interface {{ port_name }} bridge domain br_default vlan {{ _vlan_id }}
+    nv config apply -y

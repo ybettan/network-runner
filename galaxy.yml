@@ -1,0 +1,27 @@
+namespace: ansible_network
+name: network_runner
+version: 0.3.6
+readme: README.rst
+authors:
+  - Ansible Network Team
+  - Yoni Bettan <yonibettan@gmail.com>
+description: Vendor-agnostic switch configuration via Ansible (VLAN, port, trunk management)
+license_file: LICENSE
+tags: [networking, switching, vlan]
+dependencies: {}
+repository: https://github.com/ybettan/network-runner
+homepage: https://github.com/ybettan/network-runner
+issues: https://github.com/ybettan/network-runner/issues
+build_ignore:
+  - doc
+  - network_runner
+  - tests
+  - tools
+  - zuul.d
+  - etc
+  - Pipfile
+  - setup.py
+  - tox.ini
+  - bindep.txt
+  - requirements.txt
+  - test-requirements.txt
